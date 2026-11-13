@@ -19,12 +19,15 @@
   --side-bar-bg-color: #191d1b;
   --item-hover-bg-color: #352a24;
   --item-hover-text-color: #e8e5d9;
+  --select-text-bg-color: #4c6075;
+  --select-text-font-color: #ffffff;
   --monospace: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   --body-font: "Newsreader", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
   --ui-font: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 html { font-size: 16px; background: var(--bg-color); }
 body { background: var(--bg-color); color: var(--text-color); font-family: var(--ui-font); }
+::selection, #write ::selection { background: var(--select-text-bg-color); color: var(--select-text-font-color); }
 #write { box-sizing: border-box; width: 68vw; max-width: 1120px; margin: 0 auto; padding: 5.5rem 0 7rem; font-family: var(--body-font); font-size: 1.14rem; line-height: 1.82; }
 #write > * { box-sizing: border-box; width: 100%; max-width: none; }
 #write p { margin: 0 0 1.35rem; }
